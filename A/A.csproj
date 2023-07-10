@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Version>2023.6.8579.24992</Version>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFrameworks>net35;net48;netcoreapp3.1;net6.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <AssemblyName>Assembly.A</AssemblyName>
+    </PropertyGroup>
+
+</Project>
+

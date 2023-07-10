@@ -1,0 +1,25 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="RiskEvolution.Inflation.API" Version="2023.7.8586.11111" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="RiskEvolution.Reflex.Elements.Combo.DotNet" Version="2023.7.8585.22222" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net35' Or '$(TargetFramework)'=='net472'">
+    <PackageVersion Include="ValueTupleBridge" Version="0.1.5" />
+  </ItemGroup>
+  <ItemGroup Condition="'$(TargetFramework)'=='net35'">
+    <PackageVersion Include="NetLegacySupport.Tuple" Version="1.1.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="NuGetizer" Version="0.7.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="16.10.0" />
+    <PackageVersion Include="MSTest.TestAdapter" Version="2.2.5" />
+    <PackageVersion Include="MSTest.TestFramework" Version="2.2.5" />
+  </ItemGroup>
+</Project>

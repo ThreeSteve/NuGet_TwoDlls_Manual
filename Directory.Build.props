@@ -1,0 +1,47 @@
+<Project>
+
+    <PropertyGroup>
+               <Version>2023.7.8586.11111</Version> 
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <TargetFrameworks>net35;net48;netcoreapp3.1;net6.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <!-- Put all the build outputs, DLLs packages etc into the same output directory -->
+    <PropertyGroup>
+        <OutputPath>$(SolutionDir)bin\$(Configuration)</OutputPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="RiskEvolution.Inflation.API" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="RiskEvolution.Reflex.Elements.Combo.DotNet" />
+    </ItemGroup>
+
+    <PropertyGroup>
+      <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+      <Authors>Risk Evolution Financial Technology LTD</Authors>
+      <Description>Risk Evolution Financial Libraries - Inflation Seasonal Models Targetting Inflation API - REFLEX_MODELS_TWO.A, REFLEX_MODELS_TWO.B-LINEAR, Microsoft .NET Framework 3.5, .NET Framework 4.8, Microsoft .NET Core 3.1, Microsoft .NET 6.0  </Description>
+      <Company>Risk Evolution Financial Technology LTD</Company>
+      <Copyright>Risk Evolution Financial Technology LTD © 2018-22</Copyright>
+      <RepositoryUrl>https://github.com/riskevolution/ReflexPackages</RepositoryUrl>
+      <RepositoryType>git</RepositoryType>
+      <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    </PropertyGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)'=='net35' Or '$(TargetFramework)'=='net462'">
+        <PackageReference Include="ValueTupleBridge" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)'=='net35'">
+        <PackageReference Include="NetLegacySupport.Tuple" />
+    </ItemGroup>
+
+    <PropertyGroup>
+        <LangVersion>9.0</LangVersion>
+    </PropertyGroup>
+
+</Project>

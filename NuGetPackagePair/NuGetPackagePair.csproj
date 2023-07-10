@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.Build.NoTargets/3.3.0">
+
+
+  <PropertyGroup>
+    <Version>2023.7.8586.11111</Version>
+    <TargetFrameworks>net35;net48;netcoreapp3.1;net6.0</TargetFrameworks>
+  </PropertyGroup>
+
+
+
+  <PropertyGroup>
+        <PackageId>A_Plus_B</PackageId>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <TargetFrameworks>net35;net48;netcoreapp3.1;net6.0</TargetFrameworks>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\A\A.csproj" />
+      <ProjectReference Include="..\B\B.csproj" />
+    </ItemGroup>
+
+
+
+</Project>
